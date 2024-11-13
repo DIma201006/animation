@@ -1,0 +1,53 @@
+
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    /* animation-name: kubik; */
+    transform: translate(30px,30px);
+  /* animation-duration: 13s; */
+   animation: kubik 2500ms infinite;
+   animation-timing-function: cubic-bezier(.17,.67,1,.45);
+}
+
+@keyframes kubik {
+    10% {
+transform: translate(0px,600px);
+background-color: red;
+    }
+    20% {
+transform: translate(1400px,600px);
+background-color: blueviolet;
+opacity: 0.7;
+
+    }
+    30% {
+transform: translate(1400px,0px);
+background-color: blue;
+    }
+
+40% {
+    opacity: 0.4;
+    background-color: cadetblue;
+}
+
+50% {
+    background-color: chartreuse;
+}
+
+60% {
+    background-color: yellow;
+}
+
+70% {
+    background-color: coral;
+}
+
+        100% {
+transform: translate(-0px,0px);
+    opacity: 0.3;
+}
+}
+
